@@ -13,8 +13,7 @@ import okhttp3.Response;
  * Created by lzh on 2016/6/8.
  */
 public class SplashInteractorImpl implements SplashInteractor {
-    public static SplashInteractorImpl instance;
-    public static Gson gson;
+    public Gson gson;
 
     public SplashInteractorImpl() {
         gson = new Gson();

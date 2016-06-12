@@ -50,7 +50,7 @@ public class SplashActivity extends Activity implements SplashView {
     @Override
     public void loadImageView(StartImage startImage) {
         Message message = mHandler.obtainMessage();
-        message.what = 1;
+        message.what = LOADIMAGE;
         message.obj = startImage.getImg();
         mHandler.sendMessage(message);
     }
