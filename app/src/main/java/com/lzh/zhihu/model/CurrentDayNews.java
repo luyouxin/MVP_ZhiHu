@@ -22,7 +22,7 @@ public class CurrentDayNews {
      * id : 3930445
      */
 
-    private List<StoriesBean> stories;
+    private List<NewsInfo> stories;
     /**
      * title : 商场和很多人家里，竹制家具越来越多（多图）
      * image : http://p2.zhimg.com/9a/15/9a1570bb9e5fa53ae9fb9269a56ee019.jpg
@@ -41,11 +41,11 @@ public class CurrentDayNews {
         this.date = date;
     }
 
-    public List<StoriesBean> getStories() {
+    public List<NewsInfo> getStories() {
         return stories;
     }
 
-    public void setStories(List<StoriesBean> stories) {
+    public void NewsInfo(List<NewsInfo> stories) {
         this.stories = stories;
     }
 
@@ -55,54 +55,6 @@ public class CurrentDayNews {
 
     public void setTop_stories(List<TopStoriesBean> top_stories) {
         this.top_stories = top_stories;
-    }
-
-    public static class StoriesBean {
-        private String title;
-        private String ga_prefix;
-        private int type;
-        private int id;
-        private List<String> images;
-
-        public String getTitle() {
-            return title;
-        }
-
-        public void setTitle(String title) {
-            this.title = title;
-        }
-
-        public String getGa_prefix() {
-            return ga_prefix;
-        }
-
-        public void setGa_prefix(String ga_prefix) {
-            this.ga_prefix = ga_prefix;
-        }
-
-        public int getType() {
-            return type;
-        }
-
-        public void setType(int type) {
-            this.type = type;
-        }
-
-        public int getId() {
-            return id;
-        }
-
-        public void setId(int id) {
-            this.id = id;
-        }
-
-        public List<String> getImages() {
-            return images;
-        }
-
-        public void setImages(List<String> images) {
-            this.images = images;
-        }
     }
 
     public static class TopStoriesBean {

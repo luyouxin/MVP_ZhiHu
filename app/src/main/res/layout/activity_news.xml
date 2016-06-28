@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:fitsSystemWindows="true"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/blue"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="@dimen/size_66px"
+                        android:layout_height="@dimen/size_66px"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/back" />
+
+                    <ImageView
+                        android:id="@+id/share"
+                        android:layout_width="@dimen/size_66px"
+                        android:layout_height="@dimen/size_66px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/size_459px"
+                        android:layout_marginRight="@dimen/size_21px"
+                        android:layout_toLeftOf="@+id/collect"
+                        android:src="@drawable/share" />
+
+                    <ImageView
+                        android:id="@+id/collect"
+                        android:layout_width="@dimen/size_66px"
+                        android:layout_height="@dimen/size_66px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/size_21px"
+                        android:layout_toLeftOf="@+id/comment"
+                        android:src="@drawable/collect" />
+
+                    <ImageView
+                        android:id="@+id/comment"
+                        android:layout_width="@dimen/size_66px"
+                        android:layout_height="@dimen/size_66px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/size_21px"
+                        android:layout_toLeftOf="@+id/comment_num"
+                        android:src="@drawable/comment" />
+
+                    <TextView
+                        android:id="@+id/comment_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/size_21px"
+                        android:layout_toLeftOf="@+id/praise"
+                        android:text="40"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_36px" />
+
+                    <ImageView
+                        android:id="@+id/praise"
+                        android:layout_width="@dimen/size_66px"
+                        android:layout_height="@dimen/size_66px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/size_21px"
+                        android:layout_toLeftOf="@+id/praise_num"
+                        android:src="@drawable/praise" />
+
+                    <TextView
+                        android:id="@+id/praise_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/size_54px"
+                        android:text="40"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_36px" />
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

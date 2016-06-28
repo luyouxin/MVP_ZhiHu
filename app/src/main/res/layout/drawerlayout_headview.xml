@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_459px"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/account_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_129px"
+            android:layout_marginTop="@dimen/size_21px">
+
+            <com.pkmmte.view.CircularImageView
+                android:id="@+id/headimage"
+                android:layout_width="@dimen/size_99px"
+                android:layout_height="@dimen/size_99px"
+                android:layout_marginLeft="@dimen/size_54px"
+                android:src="@drawable/account_avatar" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/headimage"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_42px"
+                android:text="lizhenghua"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_42px" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_129px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size_129px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/my_collection_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_54px"
+                    android:background="@drawable/collect" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_42px"
+                    android:text="@string/my_collect"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_36px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_downland_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_54px"
+                    android:background="@drawable/download" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_42px"
+                    android:text="@string/my_downland"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_36px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_129px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_54px"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_42px"
+                android:text="@string/home"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/size_42px" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

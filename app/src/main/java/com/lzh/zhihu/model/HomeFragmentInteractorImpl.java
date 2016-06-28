@@ -12,10 +12,10 @@ import okhttp3.Response;
 /**
  * Created by lzh on 2016/6/12.
  */
-public class MainInteractorImpl implements GetNewsInteractor {
+public class HomeFragmentInteractorImpl implements GetNewsInteractor {
     private Gson gson;
 
-    public MainInteractorImpl() {
+    public HomeFragmentInteractorImpl() {
         gson = new Gson();
     }
 

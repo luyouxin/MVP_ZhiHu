@@ -4,4 +4,13 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="size_399px">133dp</dimen>
     <dimen name="size_21px">7dp</dimen>
+    <dimen name="size_600px">200dp</dimen>
+    <dimen name="size_330px">110dp</dimen>
+    <dimen name="size_129px">43dp</dimen>
+    <dimen name="size_99px">33dp</dimen>
+    <dimen name="size_54px">18dp</dimen>
+    <dimen name="size_42px">14dp</dimen>
+    <dimen name="size_36px">12dp</dimen>
+    <dimen name="size_459px">153dp</dimen>
+    <dimen name="size_66px">22dp</dimen>
 </resources>

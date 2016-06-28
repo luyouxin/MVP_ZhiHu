@@ -5,4 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="background">#efeff4</color>
     <color name="white">#FFFFFF</color>
+    <color name="list_select">#F0F0F0</color>
+    <color name="blue">#00A2EA</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#000000</color>
 </resources>
